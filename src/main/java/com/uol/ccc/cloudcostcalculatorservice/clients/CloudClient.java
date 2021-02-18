@@ -4,10 +4,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.uol.ccc.cloudcostcalculatorservice.models.CloudService;
-import com.uol.ccc.cloudcostcalculatorservice.models.ServerInstanceProduct;
+import com.uol.ccc.cloudcostcalculatorservice.models.InstancePriceParameters;
 
 public interface CloudClient {
-    List<CloudService> getServices();
+    public List<CloudService> getServices();
 
-    List<JsonNode> getServerInstanceProducts();
+    public List<JsonNode> getServerInstanceProducts(InstancePriceParameters params);
 }
